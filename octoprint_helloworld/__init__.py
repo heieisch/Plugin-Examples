@@ -11,7 +11,7 @@ class HelloWorldPlugin(octoprint.plugin.StartupPlugin,
 		self._logger.info("Hello World!")
 
 	def get_settings_defaults(self):
-		return dict(url="https://en.wikipedia.org/wiki/Hello_world",
+		return dict(url="https://en.wikipedia.org/wiki/du bist doof",
 		qp_copydir="smb://fileserver/data",
 		    qp_localdir="/qrprint/",
 		    qp_sufix=".g")
