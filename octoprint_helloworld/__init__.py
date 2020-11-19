@@ -11,12 +11,14 @@ class HelloWorldPlugin(octoprint.plugin.StartupPlugin,
 		self._logger.info("Hello World!")
 
 	def get_settings_defaults(self):
-		return dict(qp_copydir="smb://fileserver/data",
+		return dict(url="",
+		qp_copydir="smb://fileserver/data",
 		    qp_localdir="/qrprint/",
 		    qp_sufix=".g")
 
 	def get_template_configs(self):
 		return [
+			#dict(type="navbar", custom_bindings=False),
 			dict(type="settings", custom_bindings=False)
 		]
 
