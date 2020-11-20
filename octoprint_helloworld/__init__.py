@@ -11,23 +11,16 @@ class HelloWorldPlugin(octoprint.plugin.StartupPlugin,
 		self._logger.info("Hello World!")
 
 	def get_settings_defaults(self):
-		return dict(url="",
-		qp_copydir="smb://fileserver/data",
-		    qp_localdir="/qrprint/",
-		    qp_sufix=".g")
+		return dict(qp_copydir="smb://fileserver/data",
+		    qp_localdir="/home/pi/.octoprint/watched",
+		    qp_sufix="-nail.g")
 
 	def get_template_configs(self):
 		return [
-			#dict(type="navbar", custom_bindings=False),
 			dict(type="settings", custom_bindings=False)
+			dict(type="tab", custom_bindings=False)
 		]
 
-	def get_assets(self):
-		return dict(
-			js=["js/helloworld.js"],
-			css=["css/helloworld.css"],
-			less=["less/helloworld.less"]
-		)
 
 __plugin_name__ = "Hello World"
 __plugin_pythoncompat__ = ">=2.7,<4"
