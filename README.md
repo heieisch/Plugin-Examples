@@ -5,7 +5,7 @@
 ## Setup
 
 Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
-or manually using this URL:
+or manually using this URL: go to xy
 
     https://github.com/yourGithubName/OctoPrint-Helloworld/archive/master.zip
 
